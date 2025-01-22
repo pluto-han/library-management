@@ -1,0 +1,11 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    # 原先使用com.mysql.jdbc.Driver会有警告，这个方法已经被弃用，故使用新方法
+    # driver-class-name:  com.mysql.cj.jdbc.Driver
+    driver-class-name:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/library-management?serverTimezone=GMT%2B8 #北京时间
+    username: root
+    password: 123456
